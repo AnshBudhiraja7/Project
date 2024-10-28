@@ -1,0 +1,14 @@
+.row{
+    height: 300px;
+    width: 25%;
+    margin: 3%;
+    background-color: slateblue;
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+img{
+    height: 65%;
+    width: 100%;
+}

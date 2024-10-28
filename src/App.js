@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import imageCompression from 'browser-image-compression'
 const App = () => {
   const [image,setimage]=useState({})
-  const[img,setimg]=useState()
+  const[img,setimg]=useState(null)
   async function upload(event)
   {
     var file=event.target.files[0]
@@ -20,17 +20,10 @@ const App = () => {
       setimg(result);
     }
   }
-
-  function Save()
-  {
-
-  
-    
-  }
   return (
     <div className='container'>
       <input type="file" onChange={upload} className="form-control" />
-      <button className='btn btn-success' onClick={Save}>Save</button>
+      <button className='btn btn-success'>Save</button>
 
       <img src={img} alt="" />
       
